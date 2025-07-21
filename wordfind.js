@@ -74,4 +74,6 @@ function checkWord(str) {
   }
 }
 
-generateGrid();
+document.addEventListener("DOMContentLoaded", () => {
+  generateGrid();
+});
