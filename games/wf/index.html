@@ -17,6 +17,16 @@
 
    <a href="https://xullhollow.github.io/msl/index.html">← Back</a>
     <div class="device-only">Please rotate your device</div>
+
+
+      <!-- add name -->
+            <div id="start-screen">
+              <p>What’s your name?</p>
+              <input type="text" id="player-name" placeholder="Type your name" /><br>
+              <button onclick="startGame()">Start Game</button>
+            </div>
+          <!-- end add name -->  
+  
     <h2>Word Finder</h2>
     <div class="container">
       <div>
@@ -87,16 +97,6 @@
         <button class="btn" id="submit">Submit</button>
         <div class="overlay">
 
-          
-          <!-- add name -->
-            <div id="start-screen">
-              <p>What’s your name?</p>
-              <input type="text" id="player-name" placeholder="Type your name" /><br>
-              <button onclick="startGame()">Start Game</button>
-            </div>
-          <!-- end add name -->     
-
-          
           <p id="start-game">Let's Play!</p>
           <div id="game-over">
             <p>It's over <span id="playerName"></span></p>
