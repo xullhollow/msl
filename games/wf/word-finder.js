@@ -43,7 +43,35 @@ var charArray = []
 var playerScore = 0
 var letterString = ""
 
+/*-- additinal name--*/
+let playerName = "";
+
 /*----- functions -----*/
+
+
+function startGame() {
+  const input = document.getElementById("player-name").value.trim();
+  if (input === "") {
+    alert("Please enter your name!");
+    return;
+  }
+  playerName = input;
+
+  // Hide start screen, show game
+  document.getElementById("start-screen").style.display = "none";
+  document.getElementById("canvas").style.display = "block";
+  document.getElementById("word-list").style.display = "block";
+
+  // Start actual game logic
+  generateGrid(); // or whatever your init function is
+}
+
+
+
+
+
+
+
 
 function generateCumArray() {
   let sum = 0
