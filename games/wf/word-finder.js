@@ -305,6 +305,7 @@ function endGame() {
   document.querySelector("#game-over").style.display = "flex"
   document.querySelector("#high-score").innerHTML = getHighScore()
   document.querySelector("#player-score").innerHTML = playerScore
+  document.querySelector("#playerName").innerHTML = playerName
 }
 
 function newGame() {
